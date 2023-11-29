@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+
+    <div>
+        <!-- top bar  -->
+        <div class="container-fluid mt-3">
+
+            <div class="row">
+                <div class="col-6 ">
+                    <div class="float-start">
+                        <h3 id="welcome">Welcome</h3>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="float-right ml-4 ">
+                        <button onclick="delete_Account()" type="button" class="btn btn-primary bg-danger btn-block mb-4">
+                            Delete Account
+                        </button>
+                    </div>
+                    <div class="float-right ">
+                        <button onclick="logout()" type="button" class="btn btn-primary btn-block mb-4">
+                            LOGOUT
+                        </button>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+        <!--  -->
+        <!-- budget div -->
+        <div class="container-fluid ">
+            <div class="row">
+
+                <div class="col-6 mt-4  bid text-center p-5 ">
+                    <div class="mt-4">
+                        <form id="budgetForm  ">
+                            <div class="form-group">
+                                <label for="bdAmount" class="text-light">BUDGET</label>
+                                <input type="number" class="form-control" id="bdAmount" name="bdAmount"
+                                    placeholder="Enter your Budget">
+                            </div>
+
+                            <button type="button" onclick="addamount()" class="btn-primary btn-block">Calculate</button>
+                        </form>
+                    </div>
+
+
+
+                </div>
+
+                <!-- column 2  -->
+
+                <div class="col-6 mt-4  bid text-center p-5">
+                    <div>
+                        <form id="budgetForm">
+
+                            <div class="form-group">
+                                <label for="expense_details" class="text-light">Expense details </label>
+                                <input type="text" class="form-control" id="expense_details" name="expense_details"
+                                    placeholder=" Enter the details">
+                            </div>
+                            <!-- More input fields for different expense categories -->
+                            <div class="form-group">
+                                <label for="ex1_amount" class="text-light">Amount of Expense </label>
+                                <input type="text" class="form-control" id="ex1_amount" 
+                                    placeholder="Enter the amount">
+                            </div>
+                            <button  onclick="calculate()" type="button" class="btn  btn-primary btn-block">Calculate</button>
+                        </form>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- result area -->
+        <div class="bid text-center mt-5 text-Dark">
+            <div >
+              <h3><b>BALANCE BUDGET AMOUNT</b></h3>
+              <h1 class="text-light " id="resultB1">RS : 00</h1>
+            </div>
+        </div>
+
+        <div id="listdiv" class="border border-secondary mt-4 text-center " >
+            <div class="row " >
+                <div class="col-sm-4 mt-1"> <h6 class="ml-2">Expense Details</h6> </div>
+                <div class="col-sm-4 mt-1"> <h6 class="ml-2"> Amount</h6></div>
+                <div class="col-sm-4 mt-1"><h6 class="ml-2">Balance Amount</h6></div>
+                
+                </div>
+                <div id="eDetails" class="row">
+
+                </div>
+            
+            </div>
+          
+        </div>
+        
+
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./home.js"></script>
+</body>
+
+</html>

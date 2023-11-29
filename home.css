@@ -1,0 +1,113 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+ 
+  header {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  main {
+    padding: 20px 0;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  button:hover {
+    background-color: #ffffff;
+  }
+  
+  .result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+  }
+
+  body{
+   background-image: url("https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   background-repeat: no-repeat; 
+   background-size:cover;
+  
+   
+   
+  }
+
+  #balanceDiv{
+    background-color: #403e3eee;
+  }
+
+   
+ .bid{
+  max-width: 20rem;
+ 
+  padding: 20px;
+  background-color: #d16161ac;
+
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgb(82, 79, 79);
+  margin-left:auto;
+  margin-right: auto;
+  
+}
+
+#listdiv{
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #555555bb;
+  color: rgb(255, 255, 255);
+  text-shadow: #f8121276;
+  text-overflow: initial;
+  
+}
+
